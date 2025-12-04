@@ -4,6 +4,7 @@ import allRidd from './riddles/AllRiddles.js'
 import measureSolveTime from './utiles/measureSolve.js';
 import addSolveTime from "./utiles/solve_time.js"
 import askRiddle from './utiles/askRiddle.js';
+import showStats from  "./player/showStats.js"
 
 
 
@@ -22,13 +23,11 @@ for(let r of allridd){
     
 
 }
-let total = 0
-for (let t of plyer.times){
-    total += t
-    
-}
+let time =  showStats(plyer)
+
+
 console.log("good job " ,user_name);
 
-let Average = total / 1000 /allridd.length
-console.log("all time:" ,total / 1000  ,  "Average per unit" , Average);
+let Average = time / allridd.length
+console.log("all time:" ,time  ,  "Average per unit" , Average);
 
