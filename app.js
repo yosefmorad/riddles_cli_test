@@ -1,5 +1,5 @@
 import  readlineSync from  'readline-sync'
-import createPlyer from './playerData/create.js'
+import createPlyer from './player/create.js'
 import allRidd from './riddles/AllRiddles.js'
 import measureSolveTime from './utiles/measureSolve.js';
 import addSolveTime from "./utiles/solve_time.js"
